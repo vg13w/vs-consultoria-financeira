@@ -1,0 +1,507 @@
+html {
+    scroll-behavior: smooth;
+}
+/* CONFIGURAÇÕES GERAIS */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #080D18;
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+/* CABEÇALHO */
+
+
+
+   
+
+
+header img {
+    width: 130px;
+    height: auto;
+}
+
+/* APRESENTAÇÃO PRINCIPAL */
+
+.hero {
+    text-align: center;
+    padding: 100px 20px 80px;
+}
+
+.destaque {
+    color: #D4AF37;
+    font-size: 13px;
+    letter-spacing: 3px;
+}
+
+h1 {
+    font-family: Georgia, serif;
+    font-size: 52px;
+    font-weight: bold;
+    line-height: 1.2;
+    max-width: 850px;
+    margin: 25px auto;
+}
+
+h1 span {
+    color: #D4AF37;
+}
+
+.hero p {
+    color: #B8C1D1;
+    max-width: 600px;
+    margin: 0 auto 30px;
+    line-height: 1.7;
+}
+
+/* BOTÃO */
+
+.botao {
+    display: inline-block;
+    background-color: #16834A;
+    color: white;
+    text-decoration: none;
+ padding: 15px 20px;
+border-radius: 30px;
+    font-weight: bold;
+}
+
+/* SERVIÇOS */
+
+.servicos {
+    text-align: center;
+    padding: 70px 30px;
+}
+
+.servicos h2,
+.sobre h2,
+.contato h2 {
+    color: #D4AF37;
+    font-size: 30px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.card {
+    background-color: #101B2D;
+    border: 1px solid #26354B;
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 300px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: default;
+}
+.card:hover {
+    transform: translateY(-8px);
+    border-color: #D4AF37;
+}
+.card h3 {
+    color: #D4AF37;
+}
+
+.card p {
+    color: #B8C1D1;
+    line-height: 1.6;
+}
+
+/* SOBRE E CONTATO */
+
+.sobre,
+.contato {
+    text-align: center;
+    padding: 60px 20px;
+}
+.sobre {
+    background-color: #080D18;
+    padding: 30px 20px;
+    border: none;
+}
+
+.sobre p {
+    color: #B8C1D1;
+    max-width: 650px;
+    margin: 20px auto;
+    line-height: 1.7;
+}
+.sobre p,
+.contato p {
+    color: #B8C1D1;
+    line-height: 1.7;
+}
+
+/* RODAPÉ */
+
+footer {
+    text-align: center;
+    border-top: 1px solid #26354B;
+    padding: 20px;
+    color: #8994A7;
+    font-size: 13px;
+}
+.marca {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    flex-shrink: 0;
+}
+
+
+.nome-marca {
+    display: flex;
+    flex-direction: column;
+    border-left: 1px solid #D4AF37;
+    padding-left: 15px;
+    gap: 5px;
+}
+
+.nome-marca span:first-child {
+    color: white;
+    font-family: Georgia, serif;
+    font-size: 20px;
+}
+
+.nome-marca span:last-child {
+    color: #D4AF37;
+    font-size: 14px;
+    letter-spacing: 3px;
+}
+.botao:hover {
+    background-color: #D4AF37;
+    color: #080D18;
+    transition: 0.3s;
+}
+@media (max-width: 600px) {
+
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+}
+nav {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+    margin-left: auto;
+}
+
+
+
+.marca {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.nome-marca {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 20px 8%;
+    border-bottom: 1px solid #26354B;
+}
+
+
+.marca {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    flex-shrink: 0;
+}
+
+
+.botao-servicos {
+    background-color: #D4AF37;
+    color: #080D18;
+}
+.whatsapp-flutuante {
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    background-color: #25D366;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    z-index: 1000;
+}
+.whatsapp-flutuante img {
+    width: 28px;
+    height: 28px;
+    filter: invert(1);
+    display: block;
+}
+.contato {
+    padding: 90px 20px;
+}
+
+.contato p {
+    max-width: 550px;
+    margin: 20px auto 30px;
+}
+
+.contato .botao {
+    transition: 0.3s ease;
+}
+ .sobre {
+    background-color: #080D18;
+    padding: 80px 20px;
+    border: none;
+    box-shadow: none;
+    outline: none;
+}
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    nav {
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-left: 0;
+        gap: 20px;
+    }
+
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+}
+.simbolo-vs {
+    width: 130px;
+    height: auto;
+    object-fit: contain;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #D4AF37;
+}
+@keyframes aparecer {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .hero h1 {
+        animation: aparecer 2.0s ease-out both;
+    }
+}
+@media (max-width: 600px) {
+    .whatsapp-flutuante {
+        padding: 10px;
+        border-radius: 50%;
+    }
+
+    .whatsapp-flutuante img {
+        width: 24px;
+        height: 24px;
+    }
+}
+.cards-institucionais {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    margin-top: 35px;
+}
+
+.card-institucional {
+    background-color: #101B2D;
+    border: 1px solid #26354B;
+    border-radius: 10px;
+    padding: 30px;
+    text-align: center;
+   transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card-institucional:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.50);
+}
+.card-institucional h3 {
+    color: #D4AF37;
+    margin-bottom: 15px;
+    
+}
+
+.como-trabalhamos {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.como-trabalhamos h2 {
+    color: #D4AF37;
+    font-size: 30px;
+    margin-bottom: 40px;
+}
+.etapas {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.etapa {
+    background-color: #101B2D;
+    border: 1px solid #26354B;
+    border-radius: 10px;
+    padding: 25px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.etapa:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+}
+
+.etapa h3 {
+    color: #D4AF37;
+    margin-bottom: 15px;
+}
+@media (max-width: 768px) {
+    .etapas {
+        grid-template-columns: 1fr;
+    }
+}
+.bem-estar {
+    padding: 80px 20px;
+    text-align: center;
+    background-color: #101B2D;
+    border-radius: 12px;
+    max-width: 1100px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin: 60px auto;
+}
+.bem-estar:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(212, 175, 55, 0.15);
+}
+
+.bem-estar h2 {
+    color: #D4AF37;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.bem-estar p {
+    color: #FFFFFF;
+    font-size: 17px;
+    line-height: 1.8;
+    max-width: 800px;
+    margin: 0 auto;
+}
+@media (max-width: 768px) {
+    .cards-institucionais {
+        grid-template-columns: 1fr;
+    }
+}
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+}
+@media (max-width: 768px) {
+    .cards-institucionais {
+        grid-template-columns: minmax(0, 1fr);
+        width: 100%;
+    }
+
+    .card-institucional {
+        width: 100%;
+        min-width: 0;
+    }
+
+    .bem-estar {
+        width: calc(100% - 30px);
+        max-width: none;
+        margin: 40px auto;
+        padding: 30px 20px;
+    }
+}
+@media (max-width: 768px) {
+
+    .servicos .cards {
+        grid-template-columns: minmax(0, 1fr);
+        width: 100%;
+    }
+
+    .servicos .card {
+        width: 100%;
+        max-width: none;
+    }
+
+    .sobre,
+    .servicos,
+    .como-trabalhamos,
+    .contato {
+        width: 100%;
+        min-width: 0;
+    }
+
+    .bem-estar {
+        width: calc(100% - 40px);
+        max-width: none;
+        margin: 40px auto;
+        padding: 30px 20px;
+    }
+}
